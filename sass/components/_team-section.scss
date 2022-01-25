@@ -1,0 +1,123 @@
+.team-section {
+  background-color: $teamBackgroundColor;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+  }
+}
+
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: 768px) {
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  &__block {
+    padding: 36px 20px;
+    text-align: center;
+    background-color: $primaryWhiteColor;
+    max-width: 100%;
+  }
+  &__position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $secondaryTextColor;
+  }
+  &__item {
+    box-shadow: $cardShadow;
+    border-radius: 4px;
+    @media screen and (max-width: 767px) {
+      margin: 0px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 30px;
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+      &:nth-child(even) {
+        margin-right: 0px;
+      }
+    }
+    @media screen and(min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-list__link {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: $clientColor;
+  background-color: $primaryWhiteColor;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $buttonLogoColor;
+    fill: $primaryWhiteColor;
+  }
+  &:hover .instagram,
+  &:focus .instagram,
+  &:hover .facebook,
+  &:focus .facebook,
+  &:hover .linkedin,
+  &:focus .linkedin {
+    fill: $primaryWhiteColor;
+  }
+  &svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

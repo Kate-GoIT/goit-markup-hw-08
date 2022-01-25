@@ -1,0 +1,95 @@
+.client-section {
+  background-color: $primaryWhiteColor;
+  margin: 0 auto;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 36px;
+    }
+  }
+  .client-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    @media screen and (min-width: 480px) {
+      margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      // justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    &__item {
+      cursor: pointer;
+      margin: 15px;
+      flex-basis: calc((100% - 2 * 30px) / 2);
+      @media screen and(min-width: 768px) {
+        flex-basis: calc((100% - 6 * 15px) / 3);
+      }
+      @media screen and (min-width: 1200px) {
+        flex-basis: 0;
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+    &__link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 226px;
+      height: 92px;
+      border-radius: 4px;
+      border: 1px solid $clientColor;
+      fill: $clientColor;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @media screen and(min-width: 768px) {
+        width: 226px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 170px;
+      }
+      &:hover,
+      &:focus {
+        border-color: $buttonLogoColor;
+      }
+      &:hover .union,
+      &:focus .union,
+      &:hover .logo-icon,
+      &:focus .logo-icon,
+      &:hover .object,
+      &:focus .object,
+      &:hover .group,
+      &:focus .group,
+      &:hover .group-icon,
+      &:focus .group-icon,
+      &:hover .object-icon,
+      &:focus .object-icon {
+        fill: $buttonLogoColor;
+      }
+      & svg {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+/* Join us block*/
+.social-footlist {
+  display: flex;
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  &__link {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $primaryWhiteColor;
+    background-color: $footerLinkBgcolor;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $buttonLogoColor;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.join-block {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-right: 93px;
+  }
+  &__title {
+    @extend %title;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+}
+.social-footlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.sign-block {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 100%;
+    margin-top: 60px;
+  }
+}
+.sign-block__title {
+  @extend %title;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.form-group {
+  display: block;
+  margin-top: 20px;
+  padding: 0px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  &__input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 50px;
+    background-color: $inputFooterBgColor;
+    border-width: 1px;
+    border-color: $inputFooterBorderColor;
+    color: $teamBackgroundColor;
+    border-radius: 4px;
+    box-shadow: $inputShadow;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 20px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border-color: $mainBlueColor;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+  }
+  &__button {
+    width: 200px;
+    height: 50px;
+    background: $buttonLogoColor;
+    border: transparent;
+    box-shadow: $inputShadow;
+    border-radius: 4px;
+    padding: 13px 28px 13px 29px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    color: $primaryWhiteColor;
+    fill: $primaryWhiteColor;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  & .icon-send {
+    margin-left: 10px;
+    justify-self: center;
+  }
+}
+
+.placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $placeholderColor;
+}

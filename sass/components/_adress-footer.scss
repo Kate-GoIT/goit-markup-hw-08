@@ -1,0 +1,89 @@
+/* FOOTER Adress */
+.adress-section {
+  display: block;
+  background-color: $heroBackgroundColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & .container {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+  .adress-container {
+    display: block;
+    text-align: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      margin-right: 70px;
+      text-align: left;
+    }
+  }
+
+  .adress-container__link {
+    color: $primaryWhiteColor;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    font-family: "Raleway", sans-serif;
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
+  }
+  .adress-list {
+    margin-bottom: 60px;
+    display: block;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 0px;
+      text-align: center;
+    }
+    &__item {
+      display: block;
+
+      color: $translucentWhiteColor;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      &:hover,
+      &:focus {
+        color: $buttonLogoColor;
+      }
+    }
+  }
+  .adress-list__text {
+    color: $primaryWhiteColor;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    @media screen and (min-width: 1200px) {
+      width: 232px;
+    }
+  }
+  .adress-container__logo--color {
+    color: $logoFirstColor;
+  }
+}

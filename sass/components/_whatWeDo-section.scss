@@ -1,0 +1,75 @@
+//what we do section
+.do-section {
+  background-color: $primaryWhiteColor;
+  padding: 60px 15px;
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 15px;
+  }
+}
+
+.do-list {
+  display: block;
+  padding-left: 0;
+  margin: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    @media screen and (min-width: 480px) {
+      max-width: 450px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      max-width: 354px;
+      width: 50%;
+      margin-bottom: 30px;
+      &:nth-child(even) {
+        margin-left: 30px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  &__block {
+    max-width: 450px;
+    height: 120px;
+    background-color: $portfolioButtonsColor;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 270px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__paragraf {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: $secondaryTextColor;
+    text-align: left;
+  }
+}
