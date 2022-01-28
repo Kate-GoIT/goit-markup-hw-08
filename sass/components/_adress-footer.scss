@@ -69,6 +69,9 @@
       &:focus {
         color: $buttonLogoColor;
       }
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
     }
   }
   .adress-list__text {
@@ -79,6 +82,7 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     margin-top: 20px;
+    margin-bottom: 8px;
     @media screen and (min-width: 1200px) {
       width: 232px;
     }

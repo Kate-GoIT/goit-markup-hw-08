@@ -1,7 +1,11 @@
 .button-section {
   background-color: $primaryWhiteColor;
   margin: 0 auto;
-  padding: 94px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
 }
 .page-header--border {
   border-bottom: 1px solid $borderLineColor;
@@ -9,6 +13,7 @@
 
 .selection-list {
   display: flex;
+  padding-left: 0;
 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;

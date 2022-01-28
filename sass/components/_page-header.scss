@@ -10,6 +10,12 @@
     max-width: 1200px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .header-flex {
+    padding: 16px 15px;
+  }
+}
 .main-nav {
   display: none;
   visibility: hidden;
@@ -151,7 +157,7 @@
 }
 
 .icon-smartphone {
-  margin-right: 10px;
+  margin-right: 8px;
   .contact-list__tel:hover &,
   .contact-list__tel:focus & {
     fill: $buttonLogoColor;

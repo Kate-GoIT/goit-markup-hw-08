@@ -8,18 +8,22 @@
   z-index: 100;
   margin-left: auto;
   & svg {
+    padding: 8px;
     fill: $primaryTextColor;
   }
   @media screen and (min-width: 768px) {
     display: none;
   }
 
-  &:hover svg,
   &:focus svg {
     fill: $buttonLogoColor;
   }
+  &svg {
+    width: 24px;
+    height: 24px;
+  }
 }
-.menu__button .icon-menu {
+.menu__button .icon-burger {
   display: block;
   z-index: 90;
 }
@@ -30,7 +34,7 @@
   display: block;
   z-index: 90;
 }
-.menu__button.is-open .icon-menu {
+.menu__button.is-open .icon-burger {
   display: none;
 }
 
