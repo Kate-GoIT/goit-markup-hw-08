@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   height: 581px;
-  width: 528px;
+  width: 100%;
 
   box-shadow: $modalShadow;
   border-radius: 4px;
@@ -12,6 +12,14 @@
   opacity: 1;
 
   transition: opacity 250ms ease-in;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    // padding: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
   &__btn--closed {
     position: absolute;
     top: 8px;
@@ -45,6 +53,7 @@
     letter-spacing: 0.03em;
     color: $portfolioButtontextColor;
     margin-bottom: 12px;
+    text-align: center;
   }
 }
 
@@ -120,6 +129,9 @@
     }
   }
   &__btn--send {
+    position: absolute;
+    left: 31%;
+    bottom: 30px;
     width: 200px;
     height: 50px;
     background-color: $modalSendbuttonColor;
@@ -134,8 +146,6 @@
     color: $primaryWhiteColor;
     text-align: center;
     justify-content: center;
-    margin-left: 124px;
-    margin-top: 20px;
     cursor: pointer;
   }
   display: block;

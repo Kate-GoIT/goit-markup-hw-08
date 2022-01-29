@@ -1,12 +1,17 @@
 .checkbox {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
   color: $secondaryTextColor;
   display: flex;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
   &-body {
     position: absolute;
     z-index: -1;
@@ -36,6 +41,7 @@
       transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
+
   &__link {
     text-decoration: underline;
     color: $logoFirstColor;
