@@ -1737,11 +1737,17 @@ img {
 }
 .adress-section .adress-list {
   display: block;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .adress-section .adress-list {
     margin-bottom: 0px;
     text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adress-section .adress-list {
+    margin-bottom: 0px;
   }
 }
 .adress-section .adress-list__item {
