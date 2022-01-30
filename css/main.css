@@ -1835,15 +1835,16 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .join-block {
-    margin-bottom: 0px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .join-block {
     text-align: left;
     margin-right: 93px;
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
